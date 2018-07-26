@@ -14,7 +14,7 @@ def traverse[A, B](values: List[A])
   }
 
 
-val result = Await.result(traverse(list)(performSideEffect), 12 seconds)
+val result = Await.result(traverse(list)(withSideEffect), 12 seconds)
 
 //side effects are in right order:
 println (s"Side Effect: ${getSideEffect.mkString(", ")}")

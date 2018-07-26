@@ -4,7 +4,7 @@ import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.duration._
 
 val future = Future.traverse(list) {
-    performSideEffect
+    withSideEffect
 }
 
 val result = Await.result(future, 12 seconds)

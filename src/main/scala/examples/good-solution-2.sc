@@ -8,7 +8,7 @@ import scala.concurrent.Await
 
 
 val future = Task.traverse(list) {x =>
-  Task.deferFuture(performSideEffect(x))
+  Task.deferFuture(withSideEffect(x))
 }.runAsync
 
 val result = Await.result(future, 12 seconds)
