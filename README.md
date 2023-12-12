@@ -3,4 +3,4 @@
 
 **See the article:**
 
-http://scalapro.net/scala-futures-traverse-and-side-effects/
+http://blog.exxo.ru/scala-futures-traverse-and-side-effects/
